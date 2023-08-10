@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Push Notification with payload - ServiceWorker Cookbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="./manifest.json" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="p-12">
+    <h1 class="text-center text-3xl font-bold">Envio de notificaciones push</h1>
+  </header>
+
+  <main class="max-w-sm m-auto">
+    <form class="flex flex-col gap-4 mb-4">
+      <div class="flex flex-col">
+        <label class="font-bold" for="notification-payload">Mensaje</label>
+        <input class="border-2 p-2 rounded-lg" id='notification-payload' type='text' value='Esto es un ejemplo' />
+      </div>
+
+      <div class="flex flex-col">
+        <label class="font-bold" for="notification-delay">Delay de envio de la notificación, en segundos</label>
+        <input class="border-2 p-2 rounded-lg" id='notification-delay' type='number' value='2' />
+      </div>
+
+      <div class="flex flex-col">
+        <label class="font-bold" for="notification-payload">Tiempo de vida de la notificación, en segundos</label>
+        <input class="border-2 p-2 rounded-lg" id='notification-ttl' type='number' value='2' />
+      </div>
+    </form>
+    <button class="bg-blue-500 text-white p-4 font-bold rounded-full w-full transition-all active:scale-[0.95]" id="doIt">
+      ¡Enviar la notificación!
+    </button>
+  </main>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tar": "tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./*"
+  },
+  "keywords": [],
+  "author": "damenor <damenor.develop@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Web push notificationes",
+  "short_name": "webpush",
+  "description": "Web push notificationes",
+  "icons": [
+    {
+      "src": "icons/icon-32.jpg",
+      "sizes": "32x32",
+      "type": "image/jpg"
+    },
+    {
+      "src": "icons/icon-512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
